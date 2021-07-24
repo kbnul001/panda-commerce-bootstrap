@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,13 +27,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -132,7 +132,7 @@
         </section>
 
         <!-- Shoes Section -->
-        <section class="container mt-5">
+        <section class="container mt-5" id="shoes">
             <h1 class="pt-5">Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -184,7 +184,7 @@
 
         <!-- Backpack Section -->
 
-        <section class="container mt-5">
+        <section class="container my-5" id="backpack">
             <h1 class="pt-5">Backpack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -228,7 +228,6 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.
-
                             </p>
                         </div>
                         <div class="m-3">
@@ -239,9 +238,22 @@
 
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- Subscribe Section -->
+        <section id="subscribe" class="container rounded-3 d-flex justify-content-center align-items-center"
+            style="background-color: #FEEAE9; height: 300px;">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p class="text-muted">Get updates on sales, specials and more
+                </p>
+                <input type="text" placeholder="Your Email"> <br>
+                <button class="btn btn-danger">Submit</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="text-center mt-5">
+        <small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
     </footer>
 
     <!-- bootstrap scrip -->
